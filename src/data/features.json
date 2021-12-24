@@ -1,0 +1,17 @@
+[
+  {
+    "artist": "Daniel Jameson",
+    "src": "daniel.png",
+    "color": "#A18779"
+  },
+  {
+    "artist": "Andrei Masharin",
+    "src": "andrei.png",
+    "color": "#367A6C"
+  },
+  {
+    "artist": "Olivia Eklund",
+    "src": "olivia.png",
+    "color": "#5C3E2A"
+  }
+]
