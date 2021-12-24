@@ -4,18 +4,18 @@
       <h4>Share</h4>
       <ul>
         <li>
-          <a href="#">
+          <a title="url" href="#">
             <img src="../assets/images/LINK.svg" alt="url" />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="../assets/images/FB.svg" alt="url" />
+          <a title="facebook" href="#">
+            <img src="../assets/images/FB.svg" alt="facebook" />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="../assets/images/TW.svg" alt="url" />
+          <a title="twitter" href="#">
+            <img src="../assets/images/TW.svg" alt="twitter" />
           </a>
         </li>
       </ul>
