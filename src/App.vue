@@ -3,6 +3,7 @@
     <Header />
     <Hero />
     <Footer />
+    <div class="overlay"></div>
   </div>
 </template>
 
@@ -62,5 +63,30 @@ h4 {
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 2em;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  background: #a13a3f;
+  z-index: 2000;
+  animation: slideup 1000ms;
+  transition: all ease-in 1s;
+  animation-iteration-count: 2;
+}
+
+@keyframes slideup {
+  from {
+    height: 100vh;
+    visibility: visible;
+  }
+  to {
+    height: 0vh;
+    visibility: visible;
+  }
 }
 </style>

@@ -24,7 +24,7 @@
     </div>
     <div class="hero_right">
       <HeroGrid />
-      <button class="hero_right_play" title="play">
+      <button class="hero_right_play">
         <img src="../assets/images/PLAY.svg" alt="play" />
       </button>
     </div>
@@ -82,6 +82,11 @@ export default {
   z-index: 20;
   cursor: pointer;
   filter: drop-shadow(25px 25px 200px rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  animation: slideup 1000ms;
+  transition: all ease-in 1s;
+  animation-delay: 6500ms;
+  animation-fill-mode: forwards;
 }
 
 .hero_left h5 {
@@ -91,11 +96,21 @@ export default {
   letter-spacing: -0.94px;
   color: #333333;
   margin-bottom: 1em;
+  opacity: 0;
+  animation: slidedown 500ms;
+  transition: all ease-in 1s;
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
 }
 
 .hero_left h1 {
   font-size: 3rem;
   color: #000000;
+  opacity: 0;
+  animation: slidedown 500ms;
+  transition: all ease-in 1s;
+  animation-delay: 2500ms;
+  animation-fill-mode: forwards;
 }
 
 .hero_left p {
@@ -104,6 +119,11 @@ export default {
   letter-spacing: 0.2px;
   color: #333333;
   margin: 1em 0 1em 0;
+  opacity: 0;
+  animation: slidedown 500ms;
+  transition: all ease-in 1s;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
 }
 
 .hero_left_feature {
@@ -114,10 +134,37 @@ export default {
   margin-bottom: 1em;
   font-size: 1.25rem;
   letter-spacing: 0.52px;
+  opacity: 0;
+  animation: slidedown 500ms;
+  transition: all ease-in 1s;
+  animation-delay: 3500ms;
+  animation-fill-mode: forwards;
 }
 
 .hero_left_feature-flex {
   display: flex;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 700px) {

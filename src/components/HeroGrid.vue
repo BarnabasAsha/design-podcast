@@ -37,6 +37,11 @@ export default {
     "grid_two grid_two grid_four grid_four ......"
     "....... ....... grid_four grid_four ......"
     "....... ....... grid_four grid_four ......";
+  opacity: 0;
+  animation: slideup 1000ms;
+  transition: all ease-in 1s;
+  animation-delay: 6000ms;
+  animation-fill-mode: forwards;
 }
 
 .hero_grid img {
@@ -70,5 +75,16 @@ export default {
   z-index: 1;
   transform: translateY(-80px);
   filter: drop-shadow(50px 50px 200px #bac7cd);
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

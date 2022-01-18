@@ -40,6 +40,11 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 2em 0;
+  animation: slidedown 1000ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+  transition: all ease-in 1s;
+  opacity: 0;
 }
 
 .header nav ul {
@@ -75,6 +80,17 @@ export default {
   background: #a13a3f;
   opacity: 0.2;
   background-blend-mode: normal;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-60%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 700px) {
